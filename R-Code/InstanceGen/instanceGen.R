@@ -2,24 +2,26 @@ rm(list=ls())
 graphics.off()	
 options(digits = 3)	
 
-setwd("~/Dropbox/Paper2018/Instancias")
-source("sql_query.R")
+setwd("~/Gitlab/xerox-paper/R-Code/InstanceGen")
 
 
-con <-sql_connection()
-
-
-df <- get_baseInstace(con)
+#Script para generar una instancia aleatoria de 100 clientes.
+#source("sql_query.R")
+#con <-sql_connection()
+#df <- get_baseInstace(con)
 #dbDisconnect(con)
+#sampleInstance100 <-  get_randomSample_instance(con, 100)
 
-sampleInstance100 <-  get_randomSample_instance(con, 100)
+#Abir instancia aleatoria generada
+baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
 
-baseInst100 <- sampleInstance100
-
+#Construccion de Escenarios#
 ######
+#Escenario 1.
+#Costo por distancia $3.300 / ($55 /min)
+#Costo por Atraso: $4.800  / ($80 / min)
 ######
-#Construccion de Escenarios
-#Entrega lista de clientes de la semana estudiada.
+
 custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial), FUN = length )
 
 N <- 249
@@ -40,40 +42,36 @@ baseInst100 <-merge(baseInst100,custData, by='razonSocial')
 
 write.csv(baseInst100, file = "baseInst100_2.csv")
 
-mu_multa <- 28800
-sd_multa <- mu_multa*0.30
+######
+#Escenario 2.
+#Costo por distancia $3.000 / ($50 /min)
+#Costo por Atraso: $3.600  / ($60 / min)
+#Penalty Promedio:  
+######
 
-penalty <- rnorm(249, mean=mu_multa, sd=sd_multa)
-abs(penalty)
-hist(abs(penalty))
-df <- cbind(customers, penalty)
+custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial), FUN = length )
 
-range.names = c('razonSocial', 'N', 'penalty')
-names(df) = range.names
-df <-merge(abril,df, by='razonSocial')
+N <- 249
+mu <- 21600
 
+p <- data.frame(rep(mu, N))
+p05 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.05)))
+p10 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.1)))
+p20 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.2)))
+p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.5))))
+p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.15))))
+p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu*0.50))))
+p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu))))
 
+custData <- cbind(custList[,1], p, p05,p10, p15, p20, p25, p50,p100)
+colnames(custData) <- c('razonSocial','p', 'p05', 'p10', 'p15', 'p20', 'p25', 'p50', 'p100')
 
-E <- function(mu,sigma){
-  aux <- mu+0.5*sima^2
-  return(exp(aux))
-}
+ins2 <-merge(baseInst100,custData, by='razonSocial')
+write.csv(ins2, file="ins2.csv")
 
-df <- data.frame(penalty)
-
-library(ggplot2)
-theme_set(theme_classic())
-
-# Plot
-qplot(penalty, geom="histogram") 
-ggplot(data=df, aes(df$penalty)) + geom_histogram()
-
-allcust <- aggregate(raw_data$razonSocial, by=list(raw_data$razonSocial), FUN = length)
-
-
-#Disposición a Esperar 1 Dia por la Atención. ($)
-disp <- rexp(N, rate = 1/sqrt(V))*1000
-customers <-cbind.data.frame(customers, disp)
-
-write.csv(customers, file = "~/Desktop/cust-expV2.csv")
-
+######
+#Escenario 3.
+#Costo por distancia $3.000 / ($50 /min)
+#Costo por Atraso: $3.000  / ($50 / min)
+#Penalty Promedio:  
+######
