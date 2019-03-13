@@ -121,3 +121,48 @@ colnames(custData) <- c('razonSocial','p', 'p05', 'p10', 'p15', 'p20', 'p25', 'p
 ins4 <-merge(baseInst100,custData, by='razonSocial')
 write.csv(ins4, file="~/Gitlab/xerox-Paper/Data/ins4.csv")
 
+
+######
+#Escenario 5.
+#Costo por distancia $3.300 / ($50 /min)
+#Costo por Atraso: $4.800  / ($50 / min)
+#Impresoras Promedio: 20, rho: Uniforme 
+######
+
+source("~/Gitlab/xerox-paper/R-Code/Markov/markov-functions.R")
+baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
+custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial), FUN = length )
+
+N <- 249
+
+c <- rpois(N, lambda=20)
+p <- runif(N, min = 0, max = 1)
+
+
+d <-c()
+pgs <- c()
+
+for (i in 1:N) {
+  
+  pgs <- append(pgs,totalPages(c[i],p[i]))
+  
+  if (Ts_1(c[i],p[i])!="inf") {
+    
+    foo <- abs(Ts(c[i],p[i])-Ts_1(c[i],p[i]))
+    d <- append(d,foo)
+    
+  } else {
+    d <- append(d,"inf")
+  }
+}
+rm(foo)
+rm(i)
+
+d <- data.frame(d)
+pgs <-data.frame(pgs)
+
+custData <- cbind(custList[,1], d, pgs)
+colnames(custData) <- c('razonSocial','damage', 'pages')
+
+ins5 <-merge(baseInst100,custData, by='razonSocial')
+write.csv(ins5, file="~/Gitlab/xerox-Paper/Data/ins4.csv")
