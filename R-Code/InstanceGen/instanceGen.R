@@ -46,7 +46,7 @@ write.csv(baseInst100, file = "baseInst100_2.csv")
 #Escenario 2.
 #Costo por distancia $3.300 / ($50 /min)
 #Costo por Atraso: $4.800  / ($60 / min)
-#Penalty Promedio: 21.600 (Corriendo JP)
+#Penalty Promedio: 21.600
 ######
 
 custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial), FUN = length )
