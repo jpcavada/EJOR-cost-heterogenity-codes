@@ -191,8 +191,8 @@ rm(i)
 d <- data.frame(d)
 pgs <-data.frame(pgs)
 
-custData <- cbind(custList[,1], d, pgs)
-colnames(custData) <- c('razonSocial','damage', 'pages')
+custData <- cbind(custList[,1],c , p, d, pgs)
+colnames(custData) <- c('razonSocial','c','p','damage', 'pages')
 
-ins5 <-merge(baseInst100,custData, by='razonSocial')
-write.csv(ins5, file="~/Gitlab/xerox-Paper/Data/ins4.csv")
+insMarkov_1 <-merge(baseInst100,custData, by='razonSocial')
+write.csv(insMarkov_1, file="~/Gitlab/xerox-Paper/Data/insMarkov_1.csv")
