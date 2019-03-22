@@ -55,13 +55,13 @@ N <- 249
 mu <- 21600
 
 p <- data.frame(rep(mu, N))
-p05 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.05)))
-p10 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.1)))
-p20 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.2)))
-p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.25))))
-p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.15))))
-p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu*0.50))))
-p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu))))
+p05 <- data.frame(sort(rnorm(N, mean = mu, sd = 0.5)))
+p10 <- data.frame(sort(rnorm(N, mean = mu, sd = 0.75)))
+p20 <- data.frame(sort(rnorm(N, mean = mu, sd = 1)))
+p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = 1.25))))
+p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = 1.5))))
+p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =1.75))))
+p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =2))))
 
 custData <- cbind(custList[,1], p, p05,p10, p15, p20, p25, p50,p100)
 colnames(custData) <- c('razonSocial','p', 'p05', 'p10', 'p15', 'p20', 'p25', 'p50', 'p100')
