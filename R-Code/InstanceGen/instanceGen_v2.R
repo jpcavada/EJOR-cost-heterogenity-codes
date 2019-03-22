@@ -18,7 +18,7 @@ custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial),
 
 N <- 249
 mu <- log(21600)
-
+  
 p10 <- data.frame(exp(sort(rnorm(N, mean = mu, sd = 0.10))))
 p15 <- data.frame(exp(sort(abs(rnorm(N, mean = mu, sd = 0.15)))))
 p20 <- data.frame(exp(sort(rnorm(N, mean = mu, sd = 0.20))))
@@ -31,7 +31,7 @@ custData <- cbind(custList[,1], p10, p15, p20, p25, p30,p35,p40)
 colnames(custData) <- c('razonSocial', 'p10', 'p15', 'p20', 'p25', 'p30', 'p35', 'p40')
 
 final_medio <-merge(baseInst100,custData, by='razonSocial')
-write.csv(final_medio, file="~/Gitlab/xerox-Paper/Data/medio.csv")
+write.csv(final_medio, file="medio.csv")
 
 ######
 #Escenario Final: alto.
