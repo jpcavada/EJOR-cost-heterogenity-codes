@@ -1,10 +1,8 @@
 
 
-ins_p05 <- read.csv("~/Downloads/Resultados-Paper - Hoja 2.csv")
+graph1<- read.csv("~/Gitlab/xerox-paper/Data/graph-data/graph1.csv")
 
+std <-c(0.5,10,15,20,25,50,100)
+plot(x,graph1$ins2, type='l')
 
-#test <- aggregate(p05_ins1$Penalty, by=list(p05_ins1$Flex, p05$weekday), FUN = mean)
-
-
-boxplot(Penalty~Flex, data=ins_p05)
 boxplot(ins_p05$T.Servicio~Flex, data=ins_p05)
