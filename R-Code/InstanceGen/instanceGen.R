@@ -165,16 +165,13 @@ custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial),
 
 N <- 249
 
-c <- rpois(N, lambda=20)
-p <- runif(N, min = 0, max = 1)
+c <- floor(runif(N, min=1, max =5))
+p <- runif(N, min = 0.25, max=0.75)
 
 
 d <-c()
-pgs <- c()
 
 for (i in 1:N) {
-  
-  pgs <- append(pgs,totalPages(c[i],p[i]))
   
   if (Ts_1(c[i],p[i])!="inf") {
     
@@ -189,10 +186,9 @@ rm(foo)
 rm(i)
 
 d <- data.frame(d)
-pgs <-data.frame(pgs)
 
-custData <- cbind(custList[,1],c , p, d, pgs)
-colnames(custData) <- c('razonSocial','c','p','damage', 'pages')
+custData <- cbind(custList[,1],c , p, d)
+colnames(custData) <- c('razonSocial','c','p','damage')
 
 insMarkov_1 <-merge(baseInst100,custData, by='razonSocial')
 write.csv(insMarkov_1, file="~/Gitlab/xerox-Paper/Data/insMarkov_1.csv")
