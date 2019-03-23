@@ -2,7 +2,7 @@ rm(list=ls())
 graphics.off()	
 options(digits = 3)	
 
-setwd("~/Gitlab/xerox-paper/R-Code/InstanceGen")
+setwd("~/Gitlab/xerox-paper/Data")
 
 
 #Script para generar una instancia aleatoria de 100 clientes.
@@ -55,19 +55,19 @@ N <- 249
 mu <- 21600
 
 p <- data.frame(rep(mu, N))
-p05 <- data.frame(sort(rnorm(N, mean = mu, sd = 0.5)))
-p10 <- data.frame(sort(rnorm(N, mean = mu, sd = 0.75)))
-p20 <- data.frame(sort(rnorm(N, mean = mu, sd = 1)))
-p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = 1.25))))
-p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = 1.5))))
-p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =1.75))))
-p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =2))))
+p05 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.05)))
+p10 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.1)))
+p20 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.15)))
+p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.2))))
+p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.25))))
+p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu*0.5))))
+p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu))))
 
 custData <- cbind(custList[,1], p, p05,p10, p15, p20, p25, p50,p100)
 colnames(custData) <- c('razonSocial','p', 'p05', 'p10', 'p15', 'p20', 'p25', 'p50', 'p100')
 
-ins2 <-merge(baseInst100,custData, by='razonSocial')
-write.csv(ins2, file="~/Gitlab/xerox-Paper/Data/ins2.csv")
+ins2_2 <-merge(baseInst100,custData, by='razonSocial')
+write.csv(ins2_2, file="ins2_2.csv")
 
 ######
 #Escenario 3.
