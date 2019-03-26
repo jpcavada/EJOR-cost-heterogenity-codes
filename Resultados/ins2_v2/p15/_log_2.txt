@@ -1,0 +1,1006 @@
+############ITERACION 98###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 297930.8602
+421 dual simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -956851.
+                        0        114    1   F        -
+ + New bound is -926323.
+ *  739.69616582     1917  3.06s        1      (gap  > 10000%)
+ * -1775.5366593     1936  3.06s        4      (gap  > 10000%)
+ *        -88595     2135  3.07s        4      (gap is 945.6%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : -88595 (gap is 945.6%)
+ ! Best bound             : -926323.
+ ! Number of branches     : 100722
+ ! Number of fails        : 43724
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.13s (25.12s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 4009.6
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57182 choice points, 43724 fails, objective -88595
+############ITERACION 99###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 210486.9638
+33 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -916988.
+                        0        114    1   F        -
+ + New bound is -886460.
+ * -18821.979496     1615  3.08s        2      (gap is 4610%)
+ *        -29325     8644  9.46s        1      (gap is 2923%)
+ * -39385.043997     9538  10.93s       2      (gap is 2151%)
+ * -43518.815981    10659  10.93s       1      (gap is 1937%)
+ *  -43754.97214    11964  11.71s       1      (gap is 1926%)
+ *  -45845.02455    13538  13.20s       1      (gap is 1834%)
+ * -48743.639966    16473  16.14s       1      (gap is 1719%)
+ *  -49389.72737    18413  17.73s       1      (gap is 1695%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 8 solutions found.
+ ! Best objective         : -49389.7 (gap is 1695%)
+ ! Best bound             : -886460.
+ ! Number of branches     : 100578
+ ! Number of fails        : 43321
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 24.39s (24.37s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 4125.4
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57509 choice points, 43321 fails, objective -49389.72737
+############ITERACION 100###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 210486.9638
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -885196.
+                        0        114    1            -
+ + New bound is -854988.
+ * -13130.472681     1696  2.87s        1      (gap is 6411%)
+ *   -14485.0774    13260  12.54s       4      (gap is 5803%)
+ * -14525.543055    13487  12.54s       4      (gap is 5786%)
+ * -18945.904914    13543  12.54s       4      (gap is 4413%)
+ * -19910.407777    13931  13.61s       4      (gap is 4194%)
+ * -25102.209814    13956  13.61s       4      (gap is 3306%)
+ * -26718.224271    15517  14.58s       4      (gap is 3100%)
+ * -26957.063747    15602  14.58s       4      (gap is 3072%)
+ * -39535.063747    15831  15.54s       4      (gap is 2063%)
+ * -41124.219087    23439  23.82s       1      (gap is 1979%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 10 solutions found.
+ ! Best objective         : -41124.2 (gap is 1979%)
+ ! Best bound             : -854988.
+ ! Number of branches     : 100680
+ ! Number of fails        : 43809
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.66s (25.63s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 3926.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57143 choice points, 43809 fails, objective -41124.21909
+############ITERACION 101###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 210486.9638
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -878133.
+                        0        114    1            -
+ + New bound is -850997.
+ * -1035.4667129     1643  3.09s        2      (gap  > 10000%)
+ * -3379.6886902     5922  6.05s        4      (gap  > 10000%)
+ * -5426.4625222     6365  6.05s        3      (gap  > 10000%)
+ * -8444.4625222     7099  9.22s        1      (gap is 9978%)
+ * -8614.0479066     7158  9.22s        1      (gap is 9779%)
+ * -9810.8467754     9739  12.06s       1      (gap is 8574%)
+ * -10679.827676    10768  12.06s       2      (gap is 7868%)
+ * -16074.392481    13661  14.46s       2      (gap is 5194%)
+ * -19754.035976    21823  22.75s       4      (gap is 4208%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 9 solutions found.
+ ! Best objective         : -19754 (gap is 4208%)
+ ! Best bound             : -850997.
+ ! Number of branches     : 100252
+ ! Number of fails        : 42253
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.29s (25.27s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3965.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+58335 choice points, 42253 fails, objective -19754.03598
+############ITERACION 102###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 210486.9638
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -847844.
+                        0        114    1   F        -
+ + New bound is -822564.
+ *  5993.1648605     1621  3.00s        1      (gap  > 10000%)
+ * -1035.4667129     1643  3.00s        2      (gap  > 10000%)
+ * -1340.9589607     1857  3.00s        4      (gap  > 10000%)
+ * -6172.9640236    11934  10.32s       3      (gap  > 10000%)
+ * -7856.4155465    13696  13.76s       2      (gap  > 10000%)
+ * -10679.827676    14227  14.82s       2      (gap is 7602%)
+ * -13910.528062    14730  15.73s       2      (gap is 5813%)
+ *        -15804    15013  16.59s       2      (gap is 5105%)
+ * -16074.392481    21996  22.10s       1      (gap is 5017%)
+ * -16758.453781    24876  24.89s       1      (gap is 4808%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 10 solutions found.
+ ! Best objective         : -16758.5 (gap is 4808%)
+ ! Best bound             : -822564.
+ ! Number of branches     : 100222
+ ! Number of fails        : 43131
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.68s (25.66s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3904.2
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57420 choice points, 43131 fails, objective -16758.45378
+############ITERACION 103###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 210477.9355
+6 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -835871.
+                        0        114    1            -
+ + New bound is -818719.
+ * -1048.9745412     1780  3.29s        1      (gap  > 10000%)
+ * -2240.6106114     4699  5.42s        4      (gap  > 10000%)
+ * -3596.4805962    10044  12.05s       4      (gap  > 10000%)
+ * -9533.9137191    13614  14.95s       1      (gap is 8487%)
+ * -9833.0358949    18759  20.30s       1      (gap is 8226%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : -9833.04 (gap is 8226%)
+ ! Best bound             : -818719.
+ ! Number of branches     : 100116
+ ! Number of fails        : 43606
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 28.63s (28.62s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3496.9
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56834 choice points, 43606 fails, objective -9833.035895
+############ITERACION 104###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 206295.0493
+119 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -1008800
+                        0        114    1            -
+ + New bound is -988442.
+ * -1457.9749085     1780  3.26s        1      (gap  > 10000%)
+ * -5386.0252013    23793  26.88s       4      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : -5386.03 (gap  > 10000%)
+ ! Best bound             : -988442.
+ ! Number of branches     : 100623
+ ! Number of fails        : 43370
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 26.91s (26.89s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3740.6
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57559 choice points, 43370 fails, objective -5386.025201
+############ITERACION 105###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 206295.0493
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -1003410
+                        0        114    1            -
+ + New bound is -983056.
+ * -1457.9749085     1780  3.23s        1      (gap  > 10000%)
+ * -2076.0385397    20709  22.69s       1      (gap  > 10000%)
+ * -2377.9310927    22121  24.83s       4      (gap  > 10000%)
+ * -5754.5115141    24002  25.92s       1      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : -5754.51 (gap  > 10000%)
+ ! Best bound             : -983056.
+ ! Number of branches     : 100163
+ ! Number of fails        : 43731
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 27.00s (27.00s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3709.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56689 choice points, 43731 fails, objective -5754.511514
+############ITERACION 106###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 204085.5294
+80 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -992422.
+                        0        114    1   F        -
+ + New bound is -972262.
+ * -974.84590293     1780  3.16s        1      (gap  > 10000%)
+ * -1685.1888309     2529  3.65s        4      (gap  > 10000%)
+ *  -1927.948809    14300  14.19s       2      (gap  > 10000%)
+ * -2610.4404531    15084  16.10s       4      (gap  > 10000%)
+ * -4989.6806533    16707  17.81s       4      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : -4989.68 (gap  > 10000%)
+ ! Best bound             : -972262.
+ ! Number of branches     : 100053
+ ! Number of fails        : 43340
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.58s (25.57s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3912.9
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56961 choice points, 43340 fails, objective -4989.680653
+############ITERACION 107###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 204085.5294
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -992422.
+                        0        114    1   F        -
+ + New bound is -972262.
+ * -974.84590293     1780  3.16s        1      (gap  > 10000%)
+ *  -1685.188831     2529  3.67s        4      (gap  > 10000%)
+ * -2251.9514884    17062  17.08s       1      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : -2251.95 (gap  > 10000%)
+ ! Best bound             : -972262.
+ ! Number of branches     : 100188
+ ! Number of fails        : 43242
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.61s (25.59s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3913.6
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57186 choice points, 43242 fails, objective -2251.951488
+############ITERACION 108###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 203856.8658
+30 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -1005380
+                        0        114    1            -
+ + New bound is -985156.
+ * -1249.3886943     1780  3.16s        1      (gap  > 10000%)
+ * -3424.0294802    22511  22.36s       1      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : -3424.03 (gap  > 10000%)
+ ! Best bound             : -985156.
+ ! Number of branches     : 100550
+ ! Number of fails        : 43410
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 26.28s (26.27s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3826.1
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57382 choice points, 43410 fails, objective -3424.02948
+############ITERACION 109###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 203469.3723
+34 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -994745.
+                        0        114    1   F        -
+ + New bound is -973817.
+ * 416.596004069     1780  3.17s        1      (gap  > 10000%)
+ * -965.84645686     1644  3.17s        2      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : -965.846 (gap  > 10000%)
+ ! Best bound             : -973817.
+ ! Number of branches     : 100319
+ ! Number of fails        : 43730
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.15s (25.13s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3990.4
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56869 choice points, 43730 fails, objective -965.8464569
+############ITERACION 110###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 203411.394
+11 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -990489.
+                        0        114    1   F        -
+ + New bound is -969945.
+ * 975.110911284     1780  3.23s        1      (gap  > 10000%)
+ *  2.910383e-11     1644  3.23s        2      (gap  > 10000%)
+ * -2026.9373678    16342  15.75s       1      (gap  > 10000%)
+ * -2511.2779933    21789  22.62s       1      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : -2511.28 (gap  > 10000%)
+ ! Best bound             : -969945.
+ ! Number of branches     : 100022
+ ! Number of fails        : 43315
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 26.39s (26.37s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3793.0
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56947 choice points, 43315 fails, objective -2511.277993
+############ITERACION 111###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 203175.5959
+25 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -988889.
+                        0        114    1            -
+ + New bound is -968537.
+ *  1955.3244562     1780  3.24s        1      (gap  > 10000%)
+ *  7.275958e-12     1644  3.24s        2      (gap  > 10000%)
+ * -1883.9712064     2529  3.70s        4      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : -1883.97 (gap  > 10000%)
+ ! Best bound             : -968537.
+ ! Number of branches     : 100197
+ ! Number of fails        : 43736
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 26.33s (26.33s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3805.4
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56764 choice points, 43736 fails, objective -1883.971206
+############ITERACION 112###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 203085.7644
+18 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -984353.
+                        0        114    1   F        -
+ + New bound is -964449.
+ * 2944.02139646     1780  3.24s        1      (gap  > 10000%)
+ * 916.725643823     1644  3.24s        2      (gap  > 10000%)
+ *  5.820766e-11     2529  3.77s        4      (gap  > 10000%)
+ * -1216.5048124    13173  12.66s       1      (gap  > 10000%)
+ * -2096.1860746    19066  18.96s       1      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : -2096.19 (gap  > 10000%)
+ ! Best bound             : -964449.
+ ! Number of branches     : 100852
+ ! Number of fails        : 43504
+ ! Total memory usage     : 318.7 MB (263.8 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.21s (25.18s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 4003.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57604 choice points, 43504 fails, objective -2096.186075
+############ITERACION 113###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202830.0808
+29 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -992523.
+                        0        114    1            -
+ + New bound is -972811.
+ * 1303.30524683     1780  3.22s        1      (gap  > 10000%)
+ * 1031.11924791     1644  3.22s        2      (gap  > 10000%)
+ *  1.455192e-11     2529  3.83s        4      (gap  > 10000%)
+ * -951.82168024    21006  21.01s       2      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : -951.822 (gap  > 10000%)
+ ! Best bound             : -972811.
+ ! Number of branches     : 100342
+ ! Number of fails        : 43689
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 27.87s (27.86s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3601.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+56892 choice points, 43689 fails, objective -951.8216802
+############ITERACION 114###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202830.0808
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -992523.
+                        0        114    1            -
+ + New bound is -972811.
+ * 351.483566589     1780  3.15s        1      (gap  > 10000%)
+ *  1.455192e-11     2529  3.66s        4      (gap  > 10000%)
+ * -482.66311173    17705  17.70s       2      (gap  > 10000%)
+ * -2784.2645794    16761  19.75s       4      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : -2784.26 (gap  > 10000%)
+ ! Best bound             : -972811.
+ ! Number of branches     : 100662
+ ! Number of fails        : 43383
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.54s (25.53s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3942.9
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57524 choice points, 43383 fails, objective -2784.264579
+############ITERACION 115###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202769.0915
+8 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -973688.
+                        0        114    1   F        -
+ + New bound is -954296.
+ * 1571.45359526     1780  3.23s        1      (gap  > 10000%)
+ * 1436.70920503     1644  3.23s        2      (gap  > 10000%)
+ *  7.275958e-12     2529  3.92s        4      (gap  > 10000%)
+ * -81.462085529    19112  18.93s       1      (gap  > 10000%)
+ * -232.26194326    20297  19.64s       1      (gap  > 10000%)
+ * -371.43479759    20657  20.54s       2      (gap  > 10000%)
+ * -502.61381173    20890  20.54s       2      (gap  > 10000%)
+ * -2390.3835092    21994  22.15s       2      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 8 solutions found.
+ ! Best objective         : -2390.38 (gap  > 10000%)
+ ! Best bound             : -954296.
+ ! Number of branches     : 100518
+ ! Number of fails        : 43065
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.04s (25.03s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 4015.9
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57717 choice points, 43065 fails, objective -2390.383509
+############ITERACION 116###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202769.0915
+1 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -973688.
+                        0        114    1   F        -
+ + New bound is -954296.
+ * 1571.45359526     1780  3.18s        1      (gap  > 10000%)
+ * 1436.70920503     1644  3.18s        2      (gap  > 10000%)
+ *  5.820766e-11     2529  3.87s        4      (gap  > 10000%)
+ *  -1014.920751    20918  21.36s       2      (gap  > 10000%)
+ * -1658.2132847    23175  23.16s       2      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : -1658.21 (gap  > 10000%)
+ ! Best bound             : -954296.
+ ! Number of branches     : 100308
+ ! Number of fails        : 42983
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.97s (25.95s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3865.4
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57624 choice points, 42983 fails, objective -1658.213285
+############ITERACION 117###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202706.0693
+14 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -961558.
+                        0        114    1   F        -
+ + New bound is -942422.
+ * 1083.94470779     1780  3.16s        1      (gap  > 10000%)
+ * -636.63778231    17841  20.82s       4      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : -636.638 (gap  > 10000%)
+ ! Best bound             : -942422.
+ ! Number of branches     : 100446
+ ! Number of fails        : 43260
+ ! Total memory usage     : 318.8 MB (263.9 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 27.41s (27.39s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 3667.3
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57467 choice points, 43260 fails, objective -636.6377823
+############ITERACION 118###################
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.8.0.0: optimal solution; objective 202700.4871
+4 simplex iterations (0 in phase I)
+ilogcp 12.8.0: branchlimit=100000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 115 variables, 32 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! BranchLimit          = 100000
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 433.8 (before), 433.8 (after)
+ !  . Memory usage      : 36.8 MB (before), 36.8 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        115                 -
+ + New bound is -966142.
+                        0        114    1   F        -
+ + New bound is -946750.
+ * 1528.52695575     1780  3.24s        1      (gap  > 10000%)
+ * 903.160295517     1644  3.24s        2      (gap  > 10000%)
+ * 203.547336845    20258  21.18s       2      (gap  > 10000%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 203.547 (gap  > 10000%)
+ ! Best bound             : -946750.
+ ! Number of branches     : 100023
+ ! Number of fails        : 43273
+ ! Total memory usage     : 318.9 MB (264.0 MB CP Optimizer + 54.9 MB Concert)
+ ! Time spent in solve    : 25.63s (25.62s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 3904.1
+ ! ----------------------------------------------------------------------------
+ilogcp 12.8.0: limit
+57002 choice points, 43273 fails, objective 203.5473368
+CPLEX 12.8.0.0: mipdisplay=2
+mipgap 0.01
+Retaining values of one MIP start for possible repair.
+MIP Presolve eliminated 2 rows and 2 columns.
+Reduced MIP has 98 rows, 645 columns, and 2686 nonzeros.
+Reduced MIP has 645 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Found incumbent of value 1984898.000000 after 0.01 sec. (3.22 ticks)
+Probing time = 0.00 sec. (2.37 ticks)
+Reduced MIP has 98 rows, 645 columns, and 2686 nonzeros.
+Reduced MIP has 645 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time = 0.00 sec. (2.37 ticks)
+Clique table members: 97.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.01 sec. (18.85 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      1984898.0000        0.0000           100.00%
+*     0+    0                      1706349.0000        0.0000           100.00%
+*     0+    0                       957795.0000        0.0000           100.00%
+      0     0   202700.4871    93   957795.0000   202700.4871      528   78.84%
+*     0+    0                       567303.0000   202700.4871            64.27%
+      0     0   204222.9031   101   567303.0000      Cuts: 21      601   64.00%
+*     0+    0                       510854.0000   204222.9031            60.02%
+      0     0   205202.4851    98   510854.0000      Cuts: 46      683   59.83%
+*     0+    0                       301423.0000   205202.4851            31.92%
+      0     0   205235.8777    99   301423.0000    Cliques: 2      702   31.91%
+Repair heuristic found nothing.
+      0     2   205235.8777    99   301423.0000   206181.0691      702   31.60%
+Elapsed time = 0.49 sec. (518.36 ticks, tree = 0.01 MB)
+*   277+  183                       285693.0000   207570.4959            27.34%
+    652   511   253439.1658    90   285693.0000   208911.8768    19713   26.88%
+   1298  1144   206348.0922   109   285693.0000   212482.8030    37361   25.63%
+   1369    90   235697.8130    76   285693.0000   212482.8030    39674   25.63%
+   1947   494   235280.1526    81   285693.0000   212482.8030    51234   25.63%
+   3041  1557   248486.0704    82   285693.0000   212482.8030    71368   25.63%
+   4073  2455   268930.2428    77   285693.0000   213470.4523    88919   25.28%
+   5092  3183   281255.8210    75   285693.0000   214849.3204   105172   24.80%
+   5799  3817        cutoff         285693.0000   215395.0061   120352   24.61%
+   6752  4674   233936.9998    80   285693.0000   215934.1170   139377   24.42%
+*  7161  4911      integral     0   282181.0000   216183.7929   145632   23.39%
+  11119  8475   248685.2186    82   282181.0000   218219.7013   228417   22.67%
+Elapsed time = 3.72 sec. (4038.78 ticks, tree = 4.49 MB)
+* 13361+10100                       275444.0000   219153.8394            20.44%
+  14797 10677   232303.2371    73   275444.0000   219789.5032   301693   20.21%
+  18751 14299   261099.6557    76   275444.0000   221488.6265   408538   19.59%
+  22881 16994   248161.1631    75   275444.0000   222489.6223   490976   19.23%
+  26032 19517   246880.3683    75   275444.0000   223638.6882   570181   18.81%
+  29554 22168   266105.0055    77   275444.0000   224801.5935   654926   18.39%
+  33127 24864   270703.9254    77   275444.0000   225680.7002   745211   18.07%
+  36170 27153   254454.2913    80   275444.0000   226537.4279   826275   17.76%
+  40220 29975   267775.1121    77   275444.0000   227262.7982   922842   17.49%
+  44211 33113        cutoff         275444.0000   228153.3022  1031223   17.17%
+  47978 35377        cutoff         275444.0000   228861.8675  1108856   16.91%
+Elapsed time = 13.60 sec. (13577.65 ticks, tree = 17.31 MB)
+  48729 11762   212920.8005    90   275444.0000   229126.6559  1152367   16.82%
+  49282   391   226783.9444    80   275444.0000   229126.6559  1163437   16.82%
+  51116  2002   251693.2867    78   275444.0000   229126.6559  1199246   16.82%
+  53266  3798   230133.9624    81   275444.0000   229126.6559  1242732   16.82%
+  55627  5740   263943.5587    81   275444.0000   229126.6559  1293319   16.82%
+  57985  7532   258831.4237    82   275444.0000   229126.6559  1341927   16.82%
+  60215  9313   260992.5662    81   275444.0000   229126.6559  1392791   16.82%
+  62375 10900   233429.1873    76   275444.0000   229126.6559  1438708   16.82%
+  64610 12579   261178.0434    75   275444.0000   229126.6559  1494157   16.82%
+  66878 14156   238252.4054    79   275444.0000   229126.6559  1544215   16.82%
+Elapsed time = 24.84 sec. (23118.42 ticks, tree = 18.71 MB)
+  69051 15447   242516.3497    78   275444.0000   229126.6559  1587869   16.82%
+  71124 17034   241409.3474    77   275444.0000   229126.6559  1641227   16.82%
+  73180 18690   240117.8846    78   275444.0000   229126.6559  1700876   16.82%
+  75452 19983   254663.5018    76   275444.0000   229126.6559  1749249   16.82%
+  77666 21659   261764.0954    82   275444.0000   229126.6559  1811282   16.82%
+  79818 22919   248837.0042    81   275444.0000   229126.6559  1858597   16.82%
+  82020 24598   266655.6199    71   275444.0000   229126.6559  1919076   16.82%
+  84388 26129   263258.0875    76   275444.0000   229341.6904  1978928   16.74%
+  86593 27512   254697.8154    67   275444.0000   230046.3836  2034471   16.48%
+  88992 28804   237262.6711    71   275444.0000   230635.4593  2083720   16.27%
+Elapsed time = 35.95 sec. (32658.71 ticks, tree = 38.45 MB)
+  91268 30165   242334.6574    77   275444.0000   231253.9675  2140779   16.04%
+  93578 31612   252983.8120    76   275444.0000   231773.7659  2199169   15.85%
+  95951 33168   252676.8925    74   275444.0000   232305.4423  2270831   15.66%
+  98217 34477   257352.5046    72   275444.0000   232828.5754  2325519   15.47%
+ 100678 35720   268393.8579    76   275444.0000   233240.5710  2376730   15.32%
+ 102915 37128        cutoff         275444.0000   233717.4528  2436393   15.15%
+ 105373 38620        cutoff         275444.0000   234146.4708  2500073   14.99%
+ 107665 39974   255976.1245    71   275444.0000   234613.6249  2561118   14.82%
+ 110146 41330   240794.0303    82   275444.0000   235008.4844  2622088   14.68%
+ 112463 42488   248598.7048    77   275444.0000   235429.6770  2677581   14.53%
+Elapsed time = 47.02 sec. (42197.55 ticks, tree = 56.14 MB)
+ 114911 43690   250115.7424    77   275444.0000   235866.2360  2735554   14.37%
+ 117211 44798   247426.2967    79   275444.0000   236318.6724  2790141   14.20%
+ 119675 46128   250888.5010    82   275444.0000   236656.0672  2859930   14.08%
+ 121971 47195   268211.2853    72   275444.0000   237094.9682  2914803   13.92%
+ 124483 48381   256905.4621    71   275444.0000   237435.3080  2975557   13.80%
+ 126773 49672        cutoff         275444.0000   237861.2520  3047262   13.64%
+ 129243 50840        cutoff         275444.0000   238171.0443  3109544   13.53%
+ 131581 51679   272321.1667    63   275444.0000   238494.6897  3155441   13.41%
+ 134111 52701   250610.9763    71   275444.0000   238867.3906  3217179   13.28%
+ 136430 53746   251604.4847    72   275444.0000   239162.0322  3287297   13.17%
+Elapsed time = 57.89 sec. (51736.85 ticks, tree = 70.06 MB)
+ 138961 54888        cutoff         275444.0000   239525.9045  3358582   13.04%
+ 141463 55855   257703.8611    72   275444.0000   239892.5366  3417404   12.91%
+ 143949 56771   258796.0716    76   275444.0000   240204.1275  3475103   12.79%
+ 146461 57750   271207.1645    70   275444.0000   240474.2173  3542557   12.70%
+ 148848 58816   264637.9044    75   275444.0000   240850.4768  3615082   12.56%
+ 151400 59482        cutoff         275444.0000   241148.8608  3661277   12.45%
+ 153777 60411   273749.9591    71   275444.0000   241431.7414  3728147   12.35%
+ 156339 61291        cutoff         275444.0000   241775.3850  3801155   12.22%
+ 158876 62112   255307.1210    76   275444.0000   242103.2462  3866843   12.10%
+ 161349 63066   266299.5908    77   275444.0000   242477.2441  3942991   11.97%
+Elapsed time = 68.72 sec. (61277.90 ticks, tree = 80.87 MB)
+ 163930 63600   259427.5682    71   275444.0000   242782.2144  3992730   11.86%
+ 166300 64297   274112.1513    83   275444.0000   243054.7821  4057325   11.76%
+ 168530 64881   271310.8526    71   275444.0000   243337.2870  4116789   11.66%
+ 170730 65669   258717.3167    76   275444.0000   243598.5717  4189876   11.56%
+ 173000 66070   257256.5902    70   275444.0000   243871.0475  4229398   11.46%
+ 175082 66649   257397.7802    77   275444.0000   244087.5100  4293945   11.38%
+ 177349 67280   256912.6874    72   275444.0000   244408.9399  4367410   11.27%
+ 179541 67601   267074.9531    71   275444.0000   244592.9696  4405686   11.20%
+ 181532 68089        cutoff         275444.0000   244870.2391  4467321   11.10%
+ 183801 68590   254391.1848    77   275444.0000   245109.7783  4526051   11.01%
+Elapsed time = 80.21 sec. (70818.17 ticks, tree = 89.98 MB)
+ 185935 68949   265868.1845    70   275444.0000   245311.9023  4578200   10.94%
+ 187885 69259   258950.6449    75   275444.0000   245591.1459  4632461   10.84%
+ 190250 69565   264311.6861    78   275444.0000   245832.7865  4685951   10.75%
+ 192108 69875   263627.4281    80   275444.0000   246079.2185  4735227   10.66%
+ 194470 70282        cutoff         275444.0000   246358.6142  4802104   10.56%
+ 196577 70618        cutoff         275444.0000   246513.9230  4861516   10.50%
+ 198641 70992   257370.4075    70   275444.0000   246798.9959  4922691   10.40%
+ 200957 71117        cutoff         275444.0000   247009.4875  4958543   10.32%
+ 202887 71424   260131.0737    79   275444.0000   247231.8739  5031261   10.24%
+ 205240 71592   255823.9377    77   275444.0000   247465.1239  5070035   10.16%
+Elapsed time = 91.79 sec. (80357.65 ticks, tree = 92.55 MB)
+ 207123 71756   268558.7814    72   275444.0000   247682.1277  5133007   10.08%
+ 209424 71887   264331.4929    63   275444.0000   247916.9130  5185234    9.99%
+ 211473 72057   258240.1251    68   275444.0000   248128.4763  5243271    9.92%
+ 213595 72184        cutoff         275444.0000   248386.0458  5303786    9.82%
+ 215805 72302   274060.2707    69   275444.0000   248574.3086  5347214    9.76%
+ 217882 72387   269309.3585    67   275444.0000   248802.9446  5401523    9.67%
+ 219850 72455        cutoff         275444.0000   248996.6782  5451695    9.60%
+ 222177 72557   250825.6690    71   275444.0000   249248.1839  5526871    9.51%
+ 224175 72537   254332.3798    73   275444.0000   249457.2079  5566501    9.43%
+ 232732 72481   258927.1635    80   275444.0000   250269.5729  5793540    9.14%
+Elapsed time = 106.83 sec. (92760.83 ticks, tree = 93.02 MB)
+*241030 72212      integral     0   267225.0000   251061.4570  5997944    6.05%
+ 251017 64082        cutoff         267225.0000   251974.9159  6220079    5.71%
+ 262418 58114        cutoff         267225.0000   253609.5279  6497033    5.10%
+ 275900 49641        cutoff         267225.0000   255889.5493  6788840    4.24%
+ 292818 36061        cutoff         267225.0000   258676.2216  7111472    3.20%
+ 317595 12880        cutoff         267225.0000   263468.6571  7403056    1.41%
+
+Clique cuts applied:  24
+Zero-half cuts applied:  6
+Lift and project cuts applied:  4
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0.49 sec. (517.95 ticks)
+Parallel b&c, 4 threads:
+  Real time             =  133.65 sec. (115465.60 ticks)
+  Sync time (average)   =    4.48 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  134.14 sec. (115983.55 ticks)
+CPLEX 12.8.0.0: optimal integer solution within mipgap or absmipgap; objective 267225
+7425126 MIP simplex iterations
+320711 branch-and-bound nodes
+absmipgap = 2672.1, relmipgap = 0.00999946

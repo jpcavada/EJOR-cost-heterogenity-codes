@@ -93,8 +93,8 @@ p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu))))
 custData <- cbind(custList[,1], p, p05,p10, p15, p20, p25, p50,p100)
 colnames(custData) <- c('razonSocial','p', 'p05', 'p10', 'p15', 'p20', 'p25', 'p50', 'p100')
 
-ins3 <-merge(baseInst100,custData, by='razonSocial')
-write.csv(ins3, file="~/Gitlab/xerox-Paper/Data/ins3.csv")
+ins3_2<-merge(baseInst100,custData, by='razonSocial')
+write.csv(ins3_2, file="ins3_2.csv")
 
 ######
 #Escenario 4.
@@ -150,6 +150,39 @@ colnames(custData) <- c('razonSocial','serviceTime', 'p05', 'p10', 'p15', 'p20',
 
 ins5 <-merge(baseInst100,custData, by='razonSocial')
 write.csv(ins5, file="~/Gitlab/xerox-Paper/Data/ins5.csv")
+
+
+######
+#Escenario 7.
+#Costo por distancia $3.300 / ($50 /min)
+#Costo por Atraso: $4.800  / ($60 / min)
+#Penalty Promedio: 10.800 (Mismo que ins4-pero tservice ordenado)
+######
+
+baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
+custList <- aggregate(baseInst100$serviceTime, by=list(baseInst100$razonSocial), FUN = mean)
+
+tservice <- sort(custList$x)
+
+N <- 249
+mu <- 10800
+
+p <- data.frame(rep(mu, N))
+p05 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.05)))
+p10 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.1)))
+p20 <- data.frame(sort(rnorm(N, mean = mu, sd = mu*0.2)))
+p25 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.25))))
+p15 <- data.frame(sort(abs(rnorm(N, mean = mu, sd = mu*0.15))))
+p50 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu*0.50))))
+p100 <- data.frame(sort(abs(rnorm(N, mean = mu, sd =mu))))
+
+custData <- cbind(custList[,1], tservice, p05,p10, p15, p20, p25, p50,p100)
+colnames(custData) <- c('razonSocial','serviceTime', 'p05', 'p10', 'p15', 'p20', 'p25', 'p50', 'p100')
+
+ins7 <-merge(baseInst100,custData, by='razonSocial')
+write.csv(ins7, file="ins7.csv")
+
+
 
 
 ######
