@@ -14,7 +14,7 @@ setwd("~/Gitlab/xerox-paper/Data/final")
 #Abir instancia aleatoria generada
 baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
 
-custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial), FUN = length )
+custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial, oriente$monthofCall), FUN = length )
 
 N <- 249
 mu <- log(21600)

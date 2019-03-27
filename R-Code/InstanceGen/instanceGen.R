@@ -198,16 +198,13 @@ custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial),
 
 N <- 249
 
-c <- floor(runif(N, min=1, max =5))
-p <- runif(N, min = 0.25, max=0.75)
-
+#c <- floor(runif(N, min=1, max =5))
+#p <- runif(N, min = 0.25, max=0.75)
 
 d <-c()
-
 for (i in 1:N) {
   
   if (Ts_1(c[i],p[i])!="inf") {
-    
     foo <- abs(Ts(c[i],p[i])-Ts_1(c[i],p[i]))
     d <- append(d,foo)
     
@@ -225,3 +222,41 @@ colnames(custData) <- c('razonSocial','c','p','damage')
 
 insMarkov_1 <-merge(baseInst100,custData, by='razonSocial')
 write.csv(insMarkov_1, file="~/Gitlab/xerox-Paper/Data/insMarkov_1.csv")
+
+#Graficas de Markov (4-5-6-7):
+p <- c(0.1,0.15,0.20,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85)
+d <- c()
+for (i in 1:16) {
+  
+  if (Ts_1(10,p[i])!="inf") {
+    
+    foo <- abs(Ts(10,p[i])-Ts_1(10,p[i]))
+    d <- append(d,foo)
+    
+  } else {
+    d <- append(d,"inf")
+  }
+}
+
+ws <-c()
+for (i in 1:16) {
+  
+  if (Ts(10,p[i])!="inf") {
+    
+    foo <- Ts(10,p[i])
+    ws <- append(ws,foo)
+    
+  } else {
+    ws <- append(ws,"inf")
+  }
+}
+
+rm(foo)
+rm(i)
+
+d <- data.frame(d)
+ws <- data.frame(ws)
+p <- data.frame(p)
+markov4 <-cbind(p,ws,d)
+
+write.csv(markov4, file='markov-graph4.csv')
