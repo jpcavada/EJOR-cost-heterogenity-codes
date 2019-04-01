@@ -260,3 +260,12 @@ p <- data.frame(p)
 markov4 <-cbind(p,ws,d)
 
 write.csv(markov4, file='markov-graph4.csv')
+
+#Graphics
+p05 <- rnorm(N, mean = mu, sd = mu*0.05)
+p100 <- abs(rnorm(N, mean = mu, sd = mu))
+hist(p100, col='red', border = 'white', xlab='Penalty', main =" ")
+
+noise <- runif(400,min=0, max = 0.1)
+noise <- data.frame(noise)
+write.csv(noise, file='noise.csv')

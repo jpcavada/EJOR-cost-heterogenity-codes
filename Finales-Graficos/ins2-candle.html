@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Sat.', 13706, 19357, 22790, 28832],
+    ['Uns.', 16788, 19357, 22611, 24924],
+    ['Sat.', 185,	9313,	33110,	81367],
+    ['Uns.', 185,	6478,	23058,	30836]
+    // Treat first row as data as well.
+  ], true);
+
+  var options = {
+    legend:'none',
+    candlestick: {
+      risingColor: {stroke: '#6495ed', fill: '#6495ed'},
+      fallingColor: {stroke: '#6495ed'}
+    },
+    colors: ['#6495ed']
+  };
+
+  var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
+
+  chart.draw(data, options);
+}
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 450px; height: 290px;"></div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Sat.', 25470,	29672,	34318,	40631],
+    ['Uns.', 26373,	29040,	33041,	34342],
+    ['Sat.', 624,	14432,	52642,	125000],
+    ['Uns.', 11248,	8457,	17787,	51248]
+    // Treat first row as data as well.
+  ], true);
+
+  var options = {
+    legend:'none',
+    candlestick: {
+      risingColor: {stroke: '#ff0000', fill: '#ff0000'},
+      fallingColor: {stroke: '#ff0000'}
+    },
+    colors: ['#ff0000']
+  };
+
+  var chart = new google.visualization.CandlestickChart(document.getElementById('ins3'));
+
+  chart.draw(data, options);
+}
+    </script>
+  </head>
+  <body>
+    <div id="ins3" style="width: 450px; height: 290px;"></div>
+  </body>
+</html>
+

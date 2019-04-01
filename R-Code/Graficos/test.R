@@ -55,4 +55,19 @@ calls_perday <- aggregate(calls$llamados, by=list(calls$dia, calls$mes, calls$an
 
 write.csv(calls_perday, file='graph3_4.csv')
 
+#Abir instancia aleatoria generada
+baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
+
+rq <-aggregate(baseInst100$serviceTime, by=list(baseInst100$nomComuna, baseInst100$weekday), FUN = mean)
+colnames(rq) <- c('razonSocial', 'comuna', 'weekday', 'llamado')
+
+rq_ <- aggregate(rq$llamado, by=list(rq$comuna, rq$weekday), FUN=sum)
+write.csv(rq, file = 'instance_desc_1.csv')
+
+#oriente Service time Histogram
+
+hist(oriente$serviceTime, col='#6495ed', border = 'white', xlab='Service Time (min)', main =" ")
+
+
+boxplot(ins2_v2_boxblot$Penalty~ins2_v2_boxblot$Satisfied+ins2_v2_boxblot$Penalty)
 
