@@ -2,7 +2,7 @@ rm(list=ls())
 graphics.off()	
 options(digits = 3)	
 
-setwd("~/Gitlab/xerox-paper/Data/final")
+setwd("~/xerox-paper/Data/final")
 
 ######
 #Escenario Final: media
@@ -12,7 +12,7 @@ setwd("~/Gitlab/xerox-paper/Data/final")
 ######
 
 #Abir instancia aleatoria generada
-baseInst100 <- read.csv("~/Gitlab/xerox-paper/Data/baseInst100.csv")
+baseInst100 <- read.csv("~/xerox-paper/Data/baseInst100.csv")
 
 custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial, oriente$monthofCall), FUN = length )
 
