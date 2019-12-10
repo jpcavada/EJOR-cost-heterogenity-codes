@@ -1,8 +1,9 @@
-
 rm(list=ls())
 graphics.off()	
 options(digits = 3)	
 
+setwd("C:/Users/juanignacio.zambrano/Desktop/xerox-paper")
+library(xlsx)
 
 ######
 #Escenario Final: media
@@ -17,7 +18,7 @@ custList <- aggregate(baseInst100$razonSocial, by=list(baseInst100$razonSocial),
 set.seed(1)
 
 N <- 249
-mu <- log(21600)/1.3
+mu <- log(21600)*0.7
 
 p10 <- data.frame(exp(sort(rnorm(N, mean = mu, sd = 0.10))))
 p15 <- data.frame(exp(sort(abs(rnorm(N, mean = mu, sd = 0.15)))))
@@ -32,4 +33,4 @@ custData <- cbind(custList[,1], p10, p15, p20, p25, p30,p35,p40)
 colnames(custData) <- c('razonSocial', 'p10', 'p15', 'p20', 'p25', 'p30', 'p35', 'p40')
 
 base<-merge(baseInst100,custData, by='razonSocial')
-write.csv(base, file="base2.csv")
+write.xlsx(base, file='base2.xlsx')
