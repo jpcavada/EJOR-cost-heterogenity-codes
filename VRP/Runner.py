@@ -3,14 +3,15 @@ import shutil
 import time
 
 #Declare paths for AMPL and the model files
-ampl_path = '/home/juano/Desktop/amplide.linux64'
-model_path = '"/home/juano/Desktop/02_20_VRP_2/'
+ampl_path = '/home/juano/Desktop/ampl.linux64'
+model_path = '"/home/juano/Desktop/VRP/'
 
 #model_command = 'ampl "C:\\Users\\Juan Pablo\\Desktop\\asdf\\run_week.run"'
 
 #Variables Globales
 Lcap = 5
-fleet_size = 20
+#fleet_size = [25,20,20,20,15]
+fleet_size = [20,20,20,20,20]
 max_clientes = 5200000
 total_dias = 5
 costo_distancia = 55
@@ -149,7 +150,7 @@ for iter_dia in range(1,total_dias+1):
         data0_file = open('data0.dat','w+')
         data0_file.write('param C := ' + str(n_clientes_dia[iter_dia-1] + n_atrasados_dia[iter_dia-1])+ ";\n")
         data0_file.write('param Lcap := ' + str(Lcap)+";\n")
-        data0_file.write('param fleet_size := '+ str(fleet_size)+";\n")
+        data0_file.write('param fleet_size := '+ str(fleet_size[iter_dia-1])+";\n")
         data0_file.write('param distanceCost :=  '+ str(costo_distancia)+";\n")
         data0_file.write('param delayCost :='+ str(costo_atraso)+";")
         data0_file.close()
