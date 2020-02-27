@@ -1,0 +1,148 @@
+############ITERACION 154###################
+CPLEX 12.6.3.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.6.3.0: optimal solution; objective 3363912
+1 dual simplex iterations (0 in phase I)
+ilogcp 12.6.3: branchlimit=10000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 171 variables, 32 constraints
+ ! Presolve      : 1 extractable eliminated
+ ! LogVerbosity         = Terse
+ ! BranchLimit          = 10000
+ ! Initial process time : 0.13s (0.00s extraction + 0.13s propagation)
+ !  . Log search space  : 383.1 (before), 383.1 (after)
+ !  . Memory usage      : 204.4 MB (before), 205.7 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                     1000        138    3         0  = _int28
+                     1000         14    4        83 != _int164
+                     1001         13    1     466993804 != _int156
+                     1001         14    2       107 != _int164
+                     2000         13    4         9 != _int163
+                     2000         14    1        45 != _int163
+                     2000         10    2        34 != _int167
+ *        -52302     2119 102.14s       4            -
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : -52302
+ ! Number of branches     : 12884
+ ! Number of fails        : 4805
+ ! Total memory usage     : 431.9 MB (363.5 MB CP Optimizer + 68.4 MB Concert)
+ ! Time spent in solve    : 163.97s (161.99s engine + 1.97s extraction)
+ ! Search speed (br. / s) : 79.5
+ ! ----------------------------------------------------------------------------
+ilogcp 12.6.3: limit
+8126 choice points, 4805 fails, objective -52302
+############ITERACION 155###################
+CPLEX 12.6.3.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.6.3.0: optimal solution; objective 3312336
+3 simplex iterations (0 in phase I)
+ilogcp 12.6.3: branchlimit=10000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 171 variables, 32 constraints
+ ! Presolve      : 1 extractable eliminated
+ ! LogVerbosity         = Terse
+ ! BranchLimit          = 10000
+ ! Initial process time : 0.11s (0.00s extraction + 0.11s propagation)
+ !  . Log search space  : 383.1 (before), 383.1 (after)
+ !  . Memory usage      : 204.4 MB (before), 205.7 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                     1000        138    3         0  = _int28
+                     1000         14    4        83 != _int164
+                     1001         13    1     466993804 != _int156
+                     1001         14    2       107 != _int164
+                     2000         13    4         9 != _int163
+                     2000         14    1        45 != _int163
+                     2000         10    2        34 != _int167
+ *        -51458     2119 72.16s        4            -
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : -51458
+ ! Number of branches     : 12884
+ ! Number of fails        : 4805
+ ! Total memory usage     : 431.9 MB (363.5 MB CP Optimizer + 68.4 MB Concert)
+ ! Time spent in solve    : 127.46s (125.49s engine + 1.96s extraction)
+ ! Search speed (br. / s) : 102.7
+ ! ----------------------------------------------------------------------------
+ilogcp 12.6.3: limit
+8126 choice points, 4805 fails, objective -51458
+############ITERACION 156###################
+CPLEX 12.6.3.0: mipdisplay=2
+mipgap 0.01
+CPLEX 12.6.3.0: optimal solution; objective 3312336
+1 simplex iterations (0 in phase I)
+ilogcp 12.6.3: branchlimit=10000
+optimizer=auto
+outlev=terse
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 171 variables, 32 constraints
+ ! Presolve      : 1 extractable eliminated
+ ! LogVerbosity         = Terse
+ ! BranchLimit          = 10000
+ ! Initial process time : 0.14s (0.00s extraction + 0.14s propagation)
+ !  . Log search space  : 383.1 (before), 383.1 (after)
+ !  . Memory usage      : 204.4 MB (before), 205.7 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                     1000        138    3         0  = _int28
+                     1000         14    4        83 != _int164
+                     1001         13    1     466993804 != _int156
+                     1001         14    2       107 != _int164
+                     2000         13    4         9 != _int163
+                     2000         14    1        45 != _int163
+                     2000         10    2        34 != _int167
+ *             0     2119 51.15s        4            -
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 0
+ ! Number of branches     : 10059
+ ! Number of fails        : 3700
+ ! Total memory usage     : 431.2 MB (362.8 MB CP Optimizer + 68.4 MB Concert)
+ ! Time spent in solve    : 107.99s (106.33s engine + 1.65s extraction)
+ ! Search speed (br. / s) : 94.6
+ ! ----------------------------------------------------------------------------
+ilogcp 12.6.3: limit
+6399 choice points, 3700 fails, objective 0
+CPLEX 12.6.3.0: mipdisplay=2
+mipgap 0.01
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 3312336.0000.
+MIP Presolve eliminated 2 rows and 43 columns.
+Reduced MIP has 6 rows, 120 columns, and 130 nonzeros.
+Reduced MIP has 101 binaries, 19 generals, 0 SOSs, and 0 indicators.
+Probing time = 0.00 sec. (0.02 ticks)
+Reduced MIP has 6 rows, 120 columns, and 130 nonzeros.
+Reduced MIP has 101 binaries, 19 generals, 0 SOSs, and 0 indicators.
+Probing time = 0.00 sec. (0.02 ticks)
+Clique table members: 5.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.06 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      3312336.0000        0.0000           100.00%
+      0     0        cutoff        3312336.0000                      8    0.00%
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (1.20 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (1.20 ticks)
+CPLEX 12.6.3.0: optimal integer solution; objective 3312336
+8 MIP simplex iterations
+0 branch-and-bound nodes

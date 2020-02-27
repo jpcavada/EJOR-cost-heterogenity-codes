@@ -13,7 +13,7 @@ In the Instances Folder you will find some different cost configurations for the
 
 **INSTRUCTIONS**
 0. Be sure that you have AMPL with CPLEX and ilogcp solvers installed. You will also need python version 2.7 or 3+
-1. Download or clone the VRP folder, this contains all the model files and scripts.  
+1. Download or clone the Model\VRP folder, this contains all the model files and scripts.  
 2. In you local copy of the VRP folder you need to create a new folder named "backups"
 3. Open with a text editor the file "Runner.py" and change the paths for the AMPL and the model.
 3a. You can also edit here the size of the fleet parameters for each day changing the values of the array 
